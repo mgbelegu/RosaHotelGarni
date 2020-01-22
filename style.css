@@ -272,6 +272,7 @@ h1{
 
 .arrow {
     height: 39px;
+    position: relative;
 }
 
 /*BANNER 2*/
