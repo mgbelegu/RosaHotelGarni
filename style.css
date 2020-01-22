@@ -286,6 +286,29 @@ h1{
     height: 39px;
 }
 
+@media screen and (max-width: 750px){
+  #slogan h1{
+    font-size: 28px;
+  }
+
+  #slogan h2{
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  #slogan h1{
+    font-size: 22px;
+  }
+
+  #slogan h2{
+    font-size: 12px;
+  }
+
+}
+
+
 /*BANNER 2*/
 
 .column {
