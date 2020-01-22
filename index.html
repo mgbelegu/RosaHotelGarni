@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rosa Hotel Garni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="topnav" id="myTopnav">
+      <img id="navLogo" src="images/images/logo.png" alt="logo">
+      <a href="#news">ASK FOR RESERVATION</a>
+      <a id="backslash-link"><img id="backslash" src="images/backslash.png" alt="backslash icon"></a>
+      <a href="#contact">TO DO</a>
+      <a href="#contact">SEE</a>
+      <a href="#contact">EAT</a>
+      <a href="#contact">SLEEP</a>
+      <div class="dropdown active">
+        <button class="dropbtn">MEET US
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">A family business</a>
+          <a href="#">The good old way</a>
+          <a href="#">How to reach</a>
+          <a href="#">Contacts</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div id="banner1-content">
+      <div id="arrow-left">
+        <a href="#"><img class="arrow" src="images/arrow-left.png" alt="arrowleft"></a>
+      </div>
+
+      <div id="slogan">
+        <h1>EVERYONE'S DIFFERENT,OUR ROOMS TOO.</h1>
+        <h2>HOPE YOUR STILL AVAILABLE</h2>
+      </div>
+
+      <div id="arrow-right">
+        <a href="#"><img class="arrow" src="images/arrow-right.png" alt="arrowright"></a>
+      </div>
+
+    </div>
+
+    <div id="arrow-down">
+      <a href="#contact"><img class="arrow" src="images/arrow-down.png" alt="arrowdown"></a>
+    </div>
+  </header>
+
+  <main>
+    <div id="three-img" class="row">
+      <div class="column">
+        <img class="imgB2" id="img1" src="images/img1.jpg" alt="">
+      </div>
+      <div class="column">
+        <img class="imgB2" id="img2" src="images/img2.jpg" alt="">
+      </div>
+      <div class="column">
+        <img class="imgB2" id="img3" src="images/img3.jpg" alt="">
+      </div>
+    </div>
+
+    <div id="perfect-stay">
+      <img id="logo-orange" src="images/logo-orange.png" alt="">
+      <h2 style="color: #d94d39;">THE PERFECT STAY, WHATEVER YOUR WANT</h2>
+      <p id="welcome-p">SITUATED AT ONLY <mark class="darker">100 METERS FROM THE BEACH</mark>,THE HOTEL
+        DISPOSES OF PRIVATE BEACH
+        WITH SUNSHADES AND SUNLOUNGERS THAT ARE <mark class="darker">EXCLUSIVELY RESERVED</mark> FOR THE
+        CLIENTS.
+        FOR THE SUN TAN OR FOR WORK,</br>
+        FOR A CONCERT OR A JOURNEY THROUGH,</br>
+        FOR A MEETING OR FOR RUNNING,0</br>
+        FOR A <mark class="darker">TRIP TO VENICE</span> OR FOR SHOPPING...</p>
+
+      <a id="relax-a" href="#">COME IN AND RELAX</a>
+    </div>
+
+    <div id="reservation">
+      <h2 id="title">ASK FOR RESERVATION</h2>
+      <h6 id="subtitle">AND FEEL FREE TO DROP US A LINE ABOUT EVERYTHING YOU NEED TO KNOW</h6>
+      <form>
+        <div class="line-form">
+          <div class="formSection">
+            <label>Name: </label>
+            <input type="text">
+          </div>
+
+          <div class="formSection">
+            <label>Email: </label>
+            <input type="email">
+          </div>
+
+
+          <div class="formSection">
+            <label>From: </label>
+            <input class="dateform" type="date">
+          </div>
+
+          <div class="formSection">
+            <label>To:
+            </label>
+            <input class="dateform" type="date">
+          </div>
+        </div>
+
+        <div class="line-form">
+          <div id="line2form">
+            <div class="formSection">
+              <label>Adults: </label>
+              <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+
+            <div class="formSection">
+              <label>Children: </label>
+              <select>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+
+            <div class="formSection">
+              <label>Ask everything: </label>
+            </div>
+
+            <div class="formSection">
+              <textarea rows="1" cols="30" name="message"></textarea>
+            </div>
+          </div>
+
+        </div>
+
+        <button id="res-button" type="button">SEND YOUR REQUEST</button>
+      </form>
+
+    </div>
+
+    <div id="newsletter">
+      <div class="container">
+        <h2 id="nws-title">
+          STAY IN TOUCH
+        </h2>
+        <h6 id="nws-subtitle">
+          RECEIVE THE LATEST NEWS AND PROMOTION, STRAIGHT TO YOUR MAILBOX
+        </h6>
+        <form id="nws-form">
+          <input id="nws-input" type="email" placeholder="YOUR EMAIL HERE">
+          <button id="nws-button" type="button">REGISTER ME NOW</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div id="contact">
+      <div id="address">
+        <h2>ROSA HOTEL GARNI</h2>
+        <div id="stars">
+          <img src="images/star-image.png" alt="">
+          <img src="images/star-image.png" alt="">
+          <img src="images/star-image.png" alt="">
+        </div>
+        <p>Via mameli, 25 - Jesolo Lido, Venezia 30020 ITalia +39 0421 380081 info@hotelrosajesolo.it</p>
+        <p id="copyright">© rosa hotel garni 2015 - P.IVA 02638140273</p>
+      </div>
+
+      <div id="line-break">
+        <img src="images/line-break.png" alt="">
+      </div>
+
+      <div id="links">
+        <a href="#">CONTATTI</a>
+        <a href="#">CREDITS</a>
+        <a href="#">PRIVACY</a>
+        <a href="#">VERSIONE ITALIANA</a>
+      </div>
+
+      <div id="socials">
+        <a href="#"><img src="images/fb-logo.png" alt=""></a>
+
+        <a href="#"><img src="images/twitter-logo.png" alt=""></a href="#">
+
+        <a href="#"><img src="images/yt-logo.png" alt=""></a href="#">
+
+        <a href="#"><img src="images/pinterest-logo.png" alt=""></a href="#">
+
+        <a href="#"><img src="images/gplus-logo.png" alt=""></a href="#">
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
