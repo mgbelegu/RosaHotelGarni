@@ -78,3 +78,15 @@ $("#logo5").on({
         this.src = 'images/gplus-logo.png';
     }
 });
+
+$(function () {
+
+    $(".datepicker").datepicker({
+        firstDay: 1,
+        dayNamesMin: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+        showOtherMonths: true,
+        selectOtherMonths: true
+    });
+}
+
+);

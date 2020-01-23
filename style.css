@@ -23,6 +23,7 @@ src: url(fonts/Glegoo-Regular.ttf);
       box-sizing: border-box;
   }
 
+
 body {
     font-family: Arvo-Reg;
     background-color: white;
@@ -86,8 +87,7 @@ h1{
     padding: 14px 16px;
     text-decoration: none;
     font-family: Arvo-Reg;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 14pt;
     padding: 16px 9px;  
   }
   
@@ -115,8 +115,7 @@ h1{
   
   .dropdown .dropbtn {
     font-family: Arvo-Reg;
-    font-size: 14px; 
-    font-weight: bold;   
+    font-size: 14pt;   
     border: none;
     outline: none;
     color: white;
@@ -138,8 +137,9 @@ h1{
     padding: 12px 85px 12px 12px;
     margin: 0;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 16pt;
     font-family: Glegoo;
+    font-weight: lighter;
     display: block;
     text-align: left;
     font-weight: bold;
@@ -249,6 +249,15 @@ h1{
 
   /*BANNER 1*/
 
+#slogan h1{
+  font-size: 60pt;
+  margin-bottom: 10px;
+}
+
+#slogan h2{
+  font-size: 40pt;
+}
+
 #banner1-content {
     display: flex;
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
@@ -286,7 +295,7 @@ h1{
     height: 39px;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 800px){
   #slogan h1{
     font-size: 28px;
   }
@@ -348,6 +357,10 @@ h1{
     margin-right: 20%;
 }
 
+#perfect-stay h2{
+  font-size: 40pt;
+}
+
 #logo-orange {
     margin-top: 113px;
     margin-bottom: 50px;
@@ -355,16 +368,17 @@ h1{
 }
 
 p{
-    line-height: 20px;
-    font-weight: bold;
+    
+    font-family: Arvo-Reg;
 }
 
 h2 {
-    font-weight: bold;
+    font-family: Arvo-Reg;
 }
 
 #welcome-p{
     color: #7a7a7a;
+    font-size: 16pt;
 }
 
 mark.darker{
@@ -375,158 +389,211 @@ mark.darker{
 #relax-a{
     margin-top: 63px;
     margin-bottom: 124px;
-    font-size: 19px;
-    font-weight: bold;
+    font-size: 25pt;
+    font-family: Arvo-Reg;
     color: #d94d39;
     border: 3px solid #d94d39;
     padding: 35px 89px;
     text-decoration: none;
+    background-color: white;
+}
+
+@media only screen and (max-width:921px){
+  #relax-a{
+    font-size: 14pt;
+  }
+}
+
+@media only screen and (max-width:660px){
+  #relax-a{
+    font-size: 10pt;
+  }
+}
+
+@media only screen and (max-width:600px){
+  #perfect-stay h2{
+    font-size: 30pt;
+  }
+
+  #welcome-p {
+    font-size: 20pt;
+  }
+}
+
+@media only screen and (max-width:562px){
+  #relax-a{
+    font-size: 8pt;
+    padding: 17.5px 44.5px;
+  }
+}
+
+@media only screen and (max-width:525px){
+  #perfect-stay h2{
+    font-size: 20pt;
+  }
+
+  #welcome-p {
+    font-size: 10pt;
+  }
 }
 
 /*BANNER 4*/
 
-#reservation {
-    background-color: #d94d39;
-    color: white;
-    display: flex;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    width: auto;
-    height: 840px;
-}
-
-#title{
-  margin-top: 134px;
-  margin-bottom: 5px;
-  padding: 0 25px;
-  font-size: 38px;
-  text-align: center;
-}
-
-#subtitle{
-  margin-top: 5px;
-  margin-bottom: 115px;
-  font-size: 15px;
-  padding: 0 25px;
-  text-align: center;
-}
-
 #res-container {
-  margin-top: 134px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+#res-container button{
+  font-family: Arvo-Reg;
+  background-color: white;
+  border: 0;
+  color: #d94d39;
   text-align: center;
-  width: 950px;
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 180px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+#res-container h2{
+  font-size: 50pt;
+  margin: 0;
+  margin-top: 160px;
+  text-align: center;
+}
+
+#res-container h4{
+  font-size: 20pt;
+  margin: 0;
+  margin-top: 24px;
+  margin-bottom: 116px;
+  text-align: center;
+}
+
+#reservation {
+  background-color: #d94d39;
+  color: white;
+  text-align: center;
+}
+
+#res-container form {
+  margin: 0;
+  text-align: left;
+}
+
+#res-container form div{
+  display: inline-block;
+  border-bottom: 1px solid white;
+  align-self: stretch;
+  margin-bottom: 16px;
+}
+
+#res-container label {
+  float: inline-start;
+}
+
+
+#res-container form input, textarea {
+  outline: none;
+  box-sizing: border-box;
+  float: inline-end;
+  background-color: #d94d39;
+  border: none;
+  color: white;
+  font-family: Arvo-Bold;
+}
+
+
+#res-container form input, label, option, select, textarea, button{
+  font-size: 20pt;
 }
 
 textarea{
-  width: 585px;
-  height: 22.5px;
-  outline: none;
-  background: #d94d39;
-  color: white;
-  border: 0;
-  font-family: Arvo-Bold;
-  font-size: 15px;
-  border: none;
-  padding: 5px;
+  resize: none;
   overflow: hidden;
-  white-space: pre-wrap;
-  text-overflow: ellipsis;
-  margin-bottom: -5px;
+  float: right;
+}
+
+select {
+  background-color: #d94d39;
+  color: white;
+  border: none;
+  padding-bottom: 5px;
 }
 
 option{
-  font-family: Arvo-Reg;
-  background: white;
-  outline: none;
-  border: none;
-  color: #d94d39;
-  font-size: 14px;
-}
-
-
-select{
-  font-family: Arvo-Bold;
-  background: #d94d39;
-  outline: none;
-  border: none;
-  color: white;
-}
-
-input{
-  background-color: #d94d39;
-  color: white;
-  outline: none;
-  border: none;
-  font-size: 15px;
-  font-family: Arvo-Bold;
-}
-
-label{
-  border: none;
-  font-size: 15px;
-}
-
-.formSection{
-  display: inline-block;
-  position: relative;
-  border-bottom: 1px solid white;
-}
-
-.line-form{
-  padding-top: 0px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  align-items: baseline;
-}
-
-
-#res-button{
-  margin-top: 50px;
-  text-align: center;
-  width: 100%;
+  color: #949494;
   background-color: white;
-  color: #d94d39;
-  border: 1px solid white;
-  padding: 27px;
-  font-family: Arvo-Reg;
-  font-size: 15px;
-  margin-bottom: 179px;
 }
 
-@media screen and (max-width: 900px){
-  .formSection{
-    display: block;
+.dateDiv{
+  width: auto;
+}
+
+
+@media only screen and (max-width:875px){
+  #res-container h2{
+    font-size: 35pt;
+  }
+  
+  #res-container h4{
+    font-size: 14pt;
+  }
+
+  #res-container form input, label, option, select, textarea, button{
+    font-size: 14pt;
   }
 
 }
 
-@media screen and (max-width: 615px){
-  .line-form{
-    display: flex;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: left;
+@media only screen and (max-width:690px){
+  #res-container h2{
+    font-size: 26pt;
+  }
+  
+  #res-container h4{
+    font-size: 12pt;
   }
 
-  textarea{
-    width: auto;
+  #res-container form input, label, option, select, textarea, button{
+    font-size: 12pt;
   }
-
-
 
 }
+
+@media only screen and (max-width:600px){
+  #res-container h2{
+    font-size: 22pt;
+  }
+  
+  #res-container h4{
+    font-size: 10pt;
+  }
+
+  #res-container form input, label, option, select, textarea, button{
+    font-size: 10pt;
+  }
+}
+
+@media only screen and (max-width:525px){
+  #res-container h2{
+    font-size: 20pt;
+  }
+  
+  #res-container h4{
+    font-size: 8pt;
+  }
+
+  #res-container form input, label, option, select, textarea, button{
+    font-size: 8pt;
+  }
+}
+
 
 /*BANNER 5*/
 
@@ -540,13 +607,14 @@ label{
 #nws-title{
   margin-top: 160px;
   margin-bottom: 5px;
-  font-size: 38px;
+  font-size: 50pt;
+  text-align: center;
 }
 
 #nws-subtitle{
   margin-top: 5px;
   margin-bottom: 115px;
-  font-size: 15px;
+  font-size: 20pt;
   text-align: center;
 }
 
@@ -554,7 +622,7 @@ label{
   background-color: white;
   color: #bfbfbf;
   font-family: Arvo-Reg;
-  font-size: 15px;
+  font-size: 20pt;
   padding-left: 22px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -576,7 +644,7 @@ label{
   border: 3px solid white;
   color: white;
   font-family: Arvo-Reg;
-  font-size: 15px;
+  font-size: 20pt;
 }
 
 .container{
@@ -591,29 +659,107 @@ label{
   max-width: 100%;
 }
 
-@media screen and (max-width: 660px){
+@media screen and (max-width: 1165px){
   #nws-input{
     background-color: white;
     color: #bfbfbf;
     font-family: Arvo-Reg;
-    font-size: 7.5px;
-    padding-left: 11px;
-    padding-top: 12.5px;
-    padding-bottom: 12.5px;
-    padding-right: 205px;
-    margin-right: 5px;
+    font-size: 18pt;
+    padding-left: 22px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 380px;
+    margin-right: 10px;
   }
 
   #nws-button{
     margin-top: 15px;
     margin-left: 0;
-    margin-bottom: 125px;
-    padding: 11px 25px;
+    margin-bottom: 250px;
+    padding: 22px 50px;
     background: transparent;
     border: 3px solid white;
     color: white;
     font-family: Arvo-Reg;
-    font-size: 7.5px;
+    font-size: 18pt;
+  }
+}
+
+@media screen and (max-width: 1075px){
+  #nws-input{
+    background-color: white;
+    color: #bfbfbf;
+    font-family: Arvo-Reg;
+    font-size: 14pt;
+    padding-left: 22px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 320px;
+    margin-right: 10px;
+  }
+
+  #nws-button{
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 250px;
+    padding: 22px 50px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    font-family: Arvo-Reg;
+    font-size: 14pt;
+  }
+}
+
+@media screen and (max-width: 660px){
+  #nws-input{
+    background-color: white;
+    color: #bfbfbf;
+    font-family: Arvo-Reg;
+    font-size: 10pt;
+    padding-left: 22px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 320px;
+    margin-right: 10px;
+  }
+
+  #nws-button{
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 250px;
+    padding: 22px 50px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    font-family: Arvo-Reg;
+    font-size: 8pt;
+  }
+}
+
+@media screen and (max-width: 550px){
+  #nws-input{
+    background-color: white;
+    color: #bfbfbf;
+    font-family: Arvo-Reg;
+    font-size: 8pt;
+    padding-left: 22px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 260px;
+    margin-right: 10px;
+  }
+
+  #nws-button{
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 250px;
+    padding: 22px 50px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    font-family: Arvo-Reg;
+    font-size: 8pt;
   }
 }
 
@@ -636,9 +782,10 @@ label{
 }
 
 #contact h2 {
-  font-size: 22px;
+  font-size: 30pt;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 #address{
@@ -660,7 +807,7 @@ label{
 
 #address p{
   text-align: center;
-  font-size: 13px;
+  font-size: 16pt;
   text-transform: uppercase;
   color: #808080;
   margin-top: 29px;
@@ -668,7 +815,7 @@ label{
 }
 
 #address #copyright{
-  font-size: 10px;
+  font-size: 12pt;
   margin-top: 15px;
   padding: 0;
 }
@@ -690,7 +837,7 @@ label{
 #links a{
   text-decoration: none;
   color: #808080;
-  font-size: 15px;
+  font-size: 18pt;
   padding: 0 40px 0 0;
   margin: 0;
   text-align: center;
@@ -711,4 +858,142 @@ label{
 
 #socials a{
   margin-right: 8px;
+}
+
+
+/*DATE PICKER*/
+
+.ui-datepicker{
+  background-color: white;
+  padding-bottom: 26px;
+  width: auto;
+  text-align: center;
+}
+
+.ui-datepicker-header{
+  background-color: #f4f4f4;
+  padding-top: 26px;
+  padding-bottom: 6px;
+  padding-left: 21px;
+  padding-right: 31px;
+}
+
+.ui-datepicker-prev{
+  background: url("images/cal-left-arrow.png") no-repeat center;
+  float: left;
+  cursor: pointer;
+  color: transparent;
+}
+
+.ui-datepicker-next{
+  background: url("images/cal-right-arrow.png") no-repeat center;
+  float: right;
+  cursor: pointer;
+  color: transparent;
+}
+
+.ui-datepicker-prev:hover{
+  background: url("images/cal-left-arrow-hvr.png") no-repeat center;
+  background-size: auto;
+}
+
+.ui-datepicker-next:hover{
+  background: url("images/cal-right-arrow-hvr.png") no-repeat center;
+}
+
+.ui-datepicker-title{
+  text-align: center;
+  font-family: Arvo-Reg;
+  font-size: 28pt;
+  text-transform: uppercase;
+  color: #d94d39;
+  padding: 0;
+}
+
+.ui-datepicker-year{
+  display: none;
+}
+
+.ui-datepicker-calendar thead, thead tr {
+  background-color: #f7f7f7;
+  color: #707070;
+  font-family: Arvo-Reg;
+  font-size: 12pt;
+  text-transform: uppercase;
+  margin: 0 12px;
+  padding: 12px 12px;
+}
+
+.ui-datepicker-calendar {
+  background-color: white;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+.ui-datepicker-calendar th, td{
+  padding: 11px;
+}
+
+.ui-state-default {
+  text-decoration: none;
+  color: #707070;
+}
+
+.ui-datepicker th {
+  background-color:#f7f7f7;
+  text-transform: uppercase;
+  font-size: 13pt;
+  color: #7a7a7a;
+}
+
+.ui-datepicker tbody td {
+  padding: 0;
+}
+
+  .ui-datepicker tbody td:last-child {
+      border-right: 0px;
+  }
+
+
+  .ui-datepicker tbody tr:last-child {
+      border-bottom: 0px;
+  }
+
+.ui-datepicker a {
+  text-decoration: none;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    color: #707070;;
+    height:40px;
+    width:40px;
+
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+  background: #d94d39;
+  color: white;
+  border-radius: 50%;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+  background: white;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+  background: #f4f4f4;
+  color: #000;
+}
+
+.ui-datepicker-calendar .ui-datepicker-other-month {
+  color: #bababa;
 }

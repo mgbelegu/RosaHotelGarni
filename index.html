@@ -41,6 +41,7 @@
 
       <div id="slogan">
         <h1>EVERYONE'S DIFFERENT,OUR ROOMS TOO.</h1>
+        <img src="images/white-line.png" style="margin: 0px; padding: 0;">
         <h2>HOPE YOUR STILL AVAILABLE</h2>
       </div>
 
@@ -80,75 +81,85 @@
         FOR A MEETING OR FOR RUNNING,0</br>
         FOR A <mark class="darker">TRIP TO VENICE</span> OR FOR SHOPPING...</p>
 
-      <a id="relax-a" href="#">COME IN AND RELAX</a>
+      <button type="button" id="relax-a">COME IN AND RELAX</button>
     </div>
 
-    <div id="reservation">
-      <h2 id="title">ASK FOR RESERVATION</h2>
-      <h6 id="subtitle">AND FEEL FREE TO DROP US A LINE ABOUT EVERYTHING YOU NEED TO KNOW</h6>
-      <form>
-        <div class="line-form">
-          <div class="formSection">
-            <label>Name: </label>
+    <section id="reservation">
+      <div id="res-container">
+        <h2>ASK FOR RESERVATION</h2>
+        <h4>AND FEEL FREE TO DROP US A LINE ABOUT EVERYTHING YOU NEED TO KNOW</h4>
+
+        <form>
+          <div id="formDiv">
+            <label>
+              Name:
+            </label>
             <input type="text">
           </div>
 
-          <div class="formSection">
-            <label>Email: </label>
+          <div>
+            <label>
+              Email:
+            </label>
             <input type="email">
           </div>
 
-
-          <div class="formSection">
-            <label>From: </label>
-            <input class="dateform" type="date">
-          </div>
-
-          <div class="formSection">
-            <label>To:
+          <div class="dateDiv">
+            <label>
+              From:
             </label>
-            <input class="dateform" type="date">
-          </div>
-        </div>
-
-        <div class="line-form">
-          <div id="line2form">
-            <div class="formSection">
-              <label>Adults: </label>
-              <select>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
-            </div>
-
-            <div class="formSection">
-              <label>Children: </label>
-              <select>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
-            </div>
-
-            <div class="formSection">
-              <label>Ask everything: </label>
-            </div>
-
-            <div class="formSection">
-              <textarea rows="1" cols="30" name="message"></textarea>
-            </div>
+            <input class="datepicker" type="text">
           </div>
 
-        </div>
+          <div class="dateDiv">
+            <label>
+              To:
+            </label>
+            <input class="datepicker" type="text">
+          </div>
+          <br />
 
-        <button id="res-button" type="button">SEND YOUR REQUEST</button>
-      </form>
 
-    </div>
+          <div>
+            <label>
+              Adults:
+            </label>
+
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+
+          <div>
+            <label>
+              Children:
+            </label>
+
+            <select>
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+
+          <div>
+            <label>
+              Ask everything:
+            </label>
+            <textarea rows="1"></textarea>
+          </div>
+        </form>
+
+        <br />
+
+        <button type="submit" id="submit-request">SEND YOUR REQUEST</button>
+      </div>
+    </section>
 
     <div id="newsletter">
       <div class="container">
@@ -206,6 +217,8 @@
   </footer>
 
   <script src="jquery-3.4.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="main.js"></script>
 </body>
 
