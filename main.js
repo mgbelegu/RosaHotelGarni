@@ -84,6 +84,7 @@ $(function () {
     $(".datepicker").datepicker({
         firstDay: 1,
         dayNamesMin: ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+        dateFormat: "dd-mm-yy",
         showOtherMonths: true,
         selectOtherMonths: true
     });
