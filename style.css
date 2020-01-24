@@ -95,6 +95,7 @@ h1{
     outline-offset: -2px;
     outline: 2px solid;
     outline-color: white;
+    
   }
 
   #backslash-link {
@@ -140,6 +141,7 @@ h1{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    
   }
   
   .dropdown-content a {
@@ -154,27 +156,33 @@ h1{
     display: block;
     text-align: left;
     font-weight: bold;
+    
   }
   
   .topnav a:hover, .dropdown:hover .dropbtn {
     color: white;
+    
   }
 
   .active:hover{
     outline-color: white;
+    
   }
   
   .dropdown-content a:hover {
     background-color: #e9e9e9;
     color: #949494;
+    
   }
 
   .dropdown-content a:active{
       color: #d94d39;
+      
   }
   
   .dropdown:hover .dropdown-content {
     display: block;
+    
   }
 
 
@@ -350,6 +358,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: width 200ms;
     }
     
     .row::after {
@@ -434,14 +443,8 @@ h1{
 
 @media screen and (max-width: 1150px) {
   .column {
-      width: 100%;
-  }
-}
-
-
-@media screen and (max-width: 600px) {
-  .column {
-      width: 100%;
+    width: 100%;
+    transition: width 200ms;
   }
 }
 
@@ -463,12 +466,14 @@ h1{
 
 #perfect-stay h2{
   font-size: 40px;
+  transition: all 200ms;
 }
 
 #logo-orange {
     margin-top: 113px;
     margin-bottom: 50px;
     width: 200px;
+    transition: all 200ms;
 }
 
 p{
@@ -484,6 +489,7 @@ h2 {
     color: #7a7a7a;
     font-size: 16px;
     line-height: 25px;
+    transition: all 200ms;
 }
 
 mark.darker{
@@ -510,47 +516,28 @@ mark.darker{
   transition: all 200ms;
 }
 
-@media only screen and (max-width:921px){
-  #relax-a{
-    font-size: 16px;
-  }
-}
 
-@media only screen and (max-width:660px){
-  #relax-a{
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width:600px){
+@media only screen and (max-width:666px){
   #perfect-stay h2{
     font-size: 30px;
+    transition: all 200ms;
   }
 
   #welcome-p {
     font-size: 16px;
+    transition: all 200ms;
   }
-}
 
-@media only screen and (max-width:562px){
   #relax-a{
     padding: 17.5px 44.5px;
+    transition: all 200ms;
+    font-size: 16px;
   }
 
   #logo-orange{
     width: 150px;
     margin-top: 80px;
-  }
-
-}
-
-@media only screen and (max-width:525px){
-  #perfect-stay h2{
-    font-size: 30px;
-  }
-
-  #welcome-p {
-    font-size: 16px;
+    transition: all 200ms;
   }
 }
 
@@ -591,6 +578,7 @@ mark.darker{
   margin: 0;
   margin-top: 160px;
   text-align: center;
+  transition: all 200ms;
 }
 
 #res-container h4{
@@ -600,6 +588,7 @@ mark.darker{
   margin-bottom: 116px;
   text-align: center;
   line-height: 25px;
+  transition: all 200ms;
 }
 
 #reservation {
@@ -616,8 +605,19 @@ mark.darker{
 #res-container form div{
   display: inline-block;
   border-bottom: 1px solid white;
-  align-self: stretch;
   margin-bottom: 16px;
+}
+
+#res-container .spacer {
+  border: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#res-container .firstLineDiv {
+  width: 49%;
 }
 
 #res-container label {
@@ -636,14 +636,16 @@ mark.darker{
 }
 
 
-#res-container form input, label, opxion, select, textarea, button{
+#res-container form input, label, option, select, textarea, button{
   font-size: 20px;
+  transition: all 200ms;
 }
 
 textarea{
   resize: none;
   overflow: hidden;
   float: right;
+  width: 100%;
 }
 
 select {
@@ -658,24 +660,41 @@ option{
   background-color: white;
 }
 
-.dateDiv{
-  width: auto;
+#textAreaDiv {
+  width: 100%;
 }
 
+@media only screen and (max-width:1110px){
+  #res-container .spacer {
+    border: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-@media only screen and (max-width:875px){
+  #res-container .firstLineDiv {
+    width: 100%;
+    transition: all 200ms;
+  }
+}
+
+@media only screen and (max-width:666px){
 
   #res-container h2{
     font-size: 35px;
     margin-top: 80px;
+    transition: all 200ms;
   }
   
   #res-container h4{
     font-size: 16px;
+    transition: all 200ms;
   }
 
   #res-container form input, label, option, select, textarea, button{
     font-size: 16px;
+    transition: all 200ms;
   }
 
 }
@@ -695,6 +714,7 @@ option{
   margin-bottom: 5px;
   font-size: 50px;
   text-align: center;
+  transition: all 200ms;
 }
 
 #nws-subtitle{
@@ -702,6 +722,7 @@ option{
   margin-bottom: 115px;
   font-size: 20px;
   text-align: center;
+  transition: all 200ms;
 }
 
 #nws-input{
@@ -714,6 +735,7 @@ option{
   padding-bottom: 25px;
   padding-right: 380px;
   margin-right: 10px;
+  transition: all 200ms;
 }
 
 ::placeholder{
@@ -735,8 +757,8 @@ option{
 }
 
 #nws-button:hover{
+  border-color: #d94d39;
   background: #d94d39;
-  border: 3px solid #d94d39;
   color: white;
   transition: all 200ms;
 }
@@ -752,7 +774,7 @@ option{
   max-width: 100%;
 }
 
-@media screen and (max-width: 1295px){
+@media screen and (max-width: 1100px){
 
   #nws-input{
     font-size: 20px;
@@ -761,29 +783,11 @@ option{
     padding-bottom: 25px;
     padding-right: 380px;
     margin-right: 10px;
+    transition: all 200ms;
   }
 
 }
 
-
-@media screen and (max-width: 1165px){
-  #nws-input{
-    font-size: 18px;
-    padding-left: 22px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 380px;
-    margin-right: 10px;
-  }
-
-  #nws-button{
-    margin-top: 15px;
-    margin-left: 0;
-    margin-bottom: 250px;
-    padding: 22px 50px;
-    font-size: 18px;
-  }
-}
 
 @media screen and (max-width: 1075px){
   #nws-input{
@@ -793,6 +797,7 @@ option{
     padding-bottom: 25px;
     padding-right: 320px;
     margin-right: 10px;
+    transition: all 200ms;
   }
 
   #nws-button{
@@ -801,18 +806,16 @@ option{
     margin-bottom: 250px;
     padding: 22px 50px;
     font-size: 16px;
+    transition: all 200ms;
   }
 }
 
-@media screen and (max-width: 660px){
+@media screen and (max-width: 885px){
 
-  #nws-title {
-    font-size: 35px;
-    margin-top: 80px;
-  }
-
-  #nws-subtitle {
-    font-size: 16px;
+  #nws-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   #nws-input{
@@ -822,35 +825,42 @@ option{
     padding-bottom: 25px;
     padding-right: 280px;
     margin-right: 10px;
+    width: 100%;
+    transition: all 200ms;
   }
 
   #nws-button{
+    width: 100%;
     margin-top: 15px;
     margin-left: 0;
     margin-bottom: 250px;
     padding: 22px 50px;
     font-size: 16px;
+    transition: all 200ms;
   }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 666px){
+
+  #nws-title {
+    font-size: 35px;
+    margin-top: 80px;
+    transition: all 200ms;
+  }
+
+  #nws-subtitle {
+    font-size: 16px;
+    transition: all 200ms;
+  }
+
   #nws-input{
-    font-size: 16px;
-    padding-left: 22px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 200px;
-    margin-right: 10px;
+    padding-right: 22px;
+    transition: all 200ms;
   }
 
-  #nws-button{
-    margin-top: 15px;
-    margin-left: 0;
-    margin-bottom: 250px;
-    padding: 22px 50px;
-    font-size: 16px;
-  }
 }
+
+
 
 /*BANNER 6*/
 
