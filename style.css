@@ -911,12 +911,16 @@ option{
   color: #808080;
   margin-top: 29px;
   padding: 0;
+  line-height: 25px;
 }
 
 #address #copyright{
   font-size: 12px;
-  margin-top: 15px;
+  margin-top: 14px;
   padding: 0;
+  line-height: 25px;
+  background: none;
+  color: #808080;
 }
 
 #line-break{
@@ -929,17 +933,15 @@ option{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
 
 #links a{
   text-decoration: none;
   color: #808080;
   font-size: 18px;
-  padding: 0 40px 0 0;
-  margin: 0;
   text-align: center;
+  margin: 0 20px;
 }
 
 #socials{
@@ -956,7 +958,7 @@ option{
 }
 
 #socials a{
-  margin-right: 8px;
+  margin: 0 4px;
 }
 
 @media screen and (max-width: 1035px){
@@ -966,6 +968,15 @@ option{
 
   #socials {
     margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 950px){
+
+  #links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
