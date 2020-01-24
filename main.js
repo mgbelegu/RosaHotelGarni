@@ -88,6 +88,42 @@ $(function () {
         showOtherMonths: true,
         selectOtherMonths: true
     });
-}
 
+    $("#go-down").click(function (e) {
+        e.preventDefault();
+        var aid = $(this).attr("href");
+        $('html,body').animate({ scrollTop: $(aid).offset().top }, 'slow');
+    });
+
+}
 );
+
+//SLIDER
+
+var images = ["banner1.jpg", "banner2.jpg"];
+$(function () {
+    var i = 0;
+    $("header").css("background-image", "linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(images/" + images[i] + ")");
+
+    $("#arrow-left").on("click", function () {
+        i++;
+        if (i == images.length) {
+            i = 0;
+        }
+        $("header").fadeOut(0, function () {
+            $(this).css("background-image", "linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(images/" + images[i] + ")");
+            $(this).fadeIn(0);
+        });
+    });
+
+    $("#arrow-right").on("click", function () {
+        i++;
+        if (i == images.length) {
+            i = 0;
+        }
+        $("header").hide(0, function () {
+            $(this).css("background-image", "linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url(images/" + images[i] + ")");
+            $(this).show(0);
+        });
+    });
+});

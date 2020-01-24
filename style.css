@@ -40,6 +40,7 @@ header{
     height: 842px;
     color: white;
     padding-top: 37px;
+    z-index: 100;
 }
 
 main{
@@ -182,7 +183,6 @@ h1{
   
   .dropdown:hover .dropdown-content {
     display: block;
-    
   }
 
 
