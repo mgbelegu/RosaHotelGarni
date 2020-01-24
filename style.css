@@ -622,18 +622,19 @@ mark.darker{
 }
 
 #res-container label {
-  float: inline-start;
+  float: left;
 }
 
 
 #res-container form input, textarea {
   outline: none;
   box-sizing: border-box;
-  float: inline-end;
+  float: right;
   background-color: #d94d39;
   border: none;
   color: white;
   font-family: Arvo-Bold;
+  width: 84%;
 }
 
 
